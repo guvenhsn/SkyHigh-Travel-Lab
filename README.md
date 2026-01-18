@@ -7,7 +7,12 @@
 ![Tools](https://img.shields.io/badge/Tools-Python%20%7C%20Wireshark%20%7C%20Bcrypt-blue)
 
 ## 📌 Executive Summary
-This project simulates a real-world security assessment of "SkyHigh Travel," a corporate web application I architected with intentional vulnerabilities (OWASP Top 10). The goal was to perform a **Red Team** engagement (Phishing, Credential Harvesting, Network Sniffing) followed by a **Blue Team** response (Log Analysis, SIEM Alerting, and Patching).
+This project simulates a full-cycle security assessment of "SkyHigh Travel," a corporate web application I architected with intentional vulnerabilities (OWASP Top 10).
+
+**The Evolution:**
+1.  **Red Team:** executed a kill chain involving Phishing, Credential Harvesting, and Man-in-the-Middle attacks.
+2.  **Blue Team (Legacy):** defended the network using manual log analysis and static keyword detection.
+3.  **Blue Team (Modern):** engineered an **AI-Powered SOC Analyst** (using Python + OpenAI API) to replace manual detection with real-time, context-aware threat intelligence.
 
 ## 🛠️ Tech Stack & Tools
 * **Target Environment:** Python (Flask), SQLite3, Ubuntu Linux.
@@ -78,13 +83,14 @@ SIEM detects 1+ failed login attempts or unauthorized access patterns (Signature
 
 ## 📂 Project Structure
 ```text
-├── app.py                # The Vulnerable Web Application (Flask)
-├── users.db              # The SQLite Database (Employees)
-├── pish_employees.py     # Red Team: Automated Phishing Script
-├── simple_siem.py        # Blue Team: Intrusion Detection Script
-├── create_secure_db.py   # Remediation: Database Hardening Script
-├── images/               # Screenshots of Wireshark & Phishing Campaign
-└── server.log            # Server Logs (Monitored by SIEM)
+├── app.py                 # The Vulnerable Web Application (Flask)
+├── users.db               # The SQLite Database (Employees)
+├── pish_employees.py      # Red Team: Automated Phishing Script
+├── ai_siem.py             # [NEW] Blue Team: AI-Powered Threat Detector (GenAI)
+├── simple_siem.py         # [Legacy] Blue Team: Static Signature Detection
+├── create_secure_db.py    # Remediation: Database Hardening & Hashing
+├── images/                # Evidence: Attacks, Forensics, & AI Detection Proof
+└── server.log             # Server Logs (Monitored by AI)
 
 
 ---
