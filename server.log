@@ -1,0 +1,20 @@
+2025-12-23 21:03:05,496 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.218:5000
+2025-12-23 21:03:05,497 - [33mPress CTRL+C to quit[0m
+2025-12-23 21:14:24,324 - 10.0.0.218 - - [23/Dec/2025 21:14:24] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 21:14:28,402 - 10.0.0.218 - - [23/Dec/2025 21:14:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-23 21:14:28,485 - 10.0.0.218 - - [23/Dec/2025 21:14:28] "GET / HTTP/1.1" 200 -
+2025-12-23 21:16:38,918 - LOGIN ATTEMPT: Email: catcher@evil.com | Password: caughtyou@1223
+2025-12-23 21:16:38,938 - 10.0.0.218 - - [23/Dec/2025 21:16:38] "POST / HTTP/1.1" 200 -
+2026-01-18 10:13:19,895 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.218:5000
+2026-01-18 10:13:19,896 - [33mPress CTRL+C to quit[0m
+2026-01-18 10:15:01,614 - 127.0.0.1 - - [18/Jan/2026 10:15:01] "[33mGET /login HTTP/1.1[0m" 404 -
+2026-01-18 10:15:08,316 - 127.0.0.1 - - [18/Jan/2026 10:15:08] "GET / HTTP/1.1" 200 -
+2026-01-18 10:15:54,232 - LOGIN ATTEMPT: Email: hacker@shadow.net | Password: ' OR 1=1--
+2026-01-18 10:15:54,250 - 127.0.0.1 - - [18/Jan/2026 10:15:54] "POST / HTTP/1.1" 200 -
+2026-01-18 10:19:17,421 - 10.0.0.218 - - [18/Jan/2026 10:19:17] "GET / HTTP/1.1" 200 -
